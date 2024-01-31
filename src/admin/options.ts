@@ -1,12 +1,11 @@
 import { AdminJSOptions } from 'adminjs';
 
 import componentLoader from './component-loader.js';
+import { User } from '../users/user.entity.js';
 
 const options: AdminJSOptions = {
-  componentLoader,
   rootPath: '/admin',
-  resources: [],
-  databases: [],
+  resources: [User],
 };
 
 export default options;
