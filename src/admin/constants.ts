@@ -1,4 +1,4 @@
 export const DEFAULT_ADMIN = {
-  email: 'admin@example.com',
-  password: 'password',
+  email: process.env.EMAIL,
+  password: process.env.PASSWORD,
 };
